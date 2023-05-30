@@ -44,7 +44,7 @@
                             <th>작성시간</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody>  
                         <c:forEach items="${ posts }" var="post">
                             <tr>
                                 <td>${ post.id }</td>
