@@ -6,8 +6,7 @@
 	id="WebApp_ID" version="5.0">
 
 	<display-name>spring2</display-name>
-	
-		<!-- 스프링 시큐리티 필터 추가(DelegatingFilterProxy) -->
+	<!-- 스프링 시큐리티 필터 추가(DelegatingFilterProxy) -->
 	<filter>
 		<filter-name>springSecurityFilterChain</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
@@ -16,7 +15,6 @@
 		<filter-name>springSecurityFilterChain</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-
 	<!-- 스프링 컨텍스트 설정 정보들을 저장한 파일의 위치 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
