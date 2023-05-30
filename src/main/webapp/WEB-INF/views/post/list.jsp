@@ -8,6 +8,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Spring 2</title>
+        
+        
+        
         <link 
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
             rel="stylesheet" 
@@ -34,6 +37,12 @@
         </nav>
         
         <main class="my-2">
+        <form method="post" action="/logout">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+        <input class="flex mr-auto mb-3 text-white text-sm sm:text-base bg-rose-500 border-0 py-1 px-3 
+            sm:py-2 sm:px-6 focus:outline-none hover:bg-rose-600 rounded cursor-pointer"
+            type="submit" value="로그아웃" />
+    	</form>
             <div class="card">
                 <table class="card-body table table-hover">
                     <thead>
